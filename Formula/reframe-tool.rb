@@ -13,8 +13,4 @@ class ReframeTool < Formula
     target.install buildpath/"reframe-tool"
     bin.install_symlink target/"reframe-tool"
   end
-
-  test do
-    assert_equals true, 10 < shell_output("reframe index -r='/Users/roland/dev/edn.nim/test-data/src-a'").length
-  end
 end
