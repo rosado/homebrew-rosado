@@ -8,6 +8,7 @@ class ReframeTool < Formula
   
   def install
     system "nimble", "build", "-y"
+    system "mv", buildpath/"reframe", buildpath/"reframe-tool"
     target = prefix/"reframe-tool/bin"
     target.install buildpath/"reframe-tool"
     bin.install_symlink target/"reframe-tool"
