@@ -7,7 +7,7 @@ class ReframeTool < Formula
   depends_on "nim" => [:build, :test]
   
   def install
-    system "nimble", "build", "-y"
+    system "nimble", "build", "-n"
     system "cp", "reframe", "/Users/roland/bin/other-utils/"
   end
 
