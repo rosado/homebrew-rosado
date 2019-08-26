@@ -5,7 +5,7 @@ class ReframeTool < Formula
   sha256 "5db236c21210e3f2e48967ab1172272dd8c44ec54232fd88c0119f6511f86b5b"
 
   def install
-    system "/Users/roland./nimble/bin/nimble", "build", "-y"
+    system "/Users/roland/.nimble/bin/nimble", "build", "-y"
     system "cp", "reframe", "/Users/roland/bin/other-utils/"
   end
 
