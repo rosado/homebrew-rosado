@@ -6,7 +6,8 @@ class ReframeTool < Formula
 
   def install
     system "nimble", "build"
-    system "cp", "reframe", "/Users/roland/bin/other-utils/"
+    system "echo", "DONE!!!"
+    #system "cp", "reframe", "/Users/roland/bin/other-utils/"
   end
 
   test do
