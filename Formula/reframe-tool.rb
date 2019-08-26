@@ -4,8 +4,10 @@ class ReframeTool < Formula
   url "https://github.com/rosado/reframe.nim/archive/0.1.0.zip"
   sha256 "5db236c21210e3f2e48967ab1172272dd8c44ec54232fd88c0119f6511f86b5b"
 
+  depends_on "nim" => [:build, :test]
+  
   def install
-    system "/Users/roland/.nimble/bin/nimble", "build", "-y"
+    system "nimble", "build", "-y"
     system "cp", "reframe", "/Users/roland/bin/other-utils/"
   end
 
