@@ -9,7 +9,7 @@ class ReframeTool < Formula
   def install
     system "nimble", "build", "-d:release", "-y"
     system "mv", buildpath/"reframe", buildpath/"reframe-tool"
-    system "mv", builpath/"clojure_keyword_index", buildpath/"clojure-keyword-index"
+    system "mv", buildpath/"clojure_keyword_index", buildpath/"clojure-keyword-index"
     target = prefix/"reframe-tool/bin"
     # reframe tool
     target.install buildpath/"reframe-tool"
