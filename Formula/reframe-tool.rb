@@ -1,8 +1,8 @@
 class ReframeTool < Formula
   desc "Tool for exploring ClojureScript re-frame codebases."
   homepage "https://github.com/rosado/reframe.nim"
-  url "https://codeload.github.com/rosado/reframe.nim/zip/0.2.0"
-  sha256 "35a2083249a2753229fd9c901515a9011c1f539161f0a954eafbe308a0892fed"
+  url "https://codeload.github.com/rosado/reframe.nim/zip/0.3.0"
+  sha256 "b62d870edfab2ff95b9d7c1975e0d380a3894c2d9271d077b61a081cf19ced84"
 
   depends_on "nim" => [:build, :test]
   
